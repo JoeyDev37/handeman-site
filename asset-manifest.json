@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/handeman-site/static/css/main.9f18debf.css",
-    "main.js": "/handeman-site/static/js/main.3137e888.js",
+    "main.js": "/handeman-site/static/js/main.955425a1.js",
     "static/media/header.png": "/handeman-site/static/media/header.1e2583090f31c238239f.png",
     "static/media/logo-white.png": "/handeman-site/static/media/logo-white.ce9580d5a30f113dfffa.png",
     "index.html": "/handeman-site/index.html",
     "main.9f18debf.css.map": "/handeman-site/static/css/main.9f18debf.css.map",
-    "main.3137e888.js.map": "/handeman-site/static/js/main.3137e888.js.map"
+    "main.955425a1.js.map": "/handeman-site/static/js/main.955425a1.js.map"
   },
   "entrypoints": [
     "static/css/main.9f18debf.css",
-    "static/js/main.3137e888.js"
+    "static/js/main.955425a1.js"
   ]
 }

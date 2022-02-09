@@ -1,25 +1,79 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Navbar, Intro, Services, Gallery, Contact, Footer } from './components';
+import header from './assets/header.png'
+import logoWhite from './assets/logo-white.png'
 import './App.css';
+import Styled from 'styled-components';
+import { COLORS } from './constants/colors';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    const Header = Styled.div`
+        height: 400px;
+        position: relative;
+
+        @media screen and (max-width: 760px) {
+            height: 250px;
+        }
+    `;
+
+    const HeaderImg = Styled.img`
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    `;
+
+    const Logo = Styled.div`
+        width: 1000px;
+        height: auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        > img {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media screen and (max-width: 1100px) {
+            width: 700px;
+        }
+
+        @media screen and (max-width: 760px) {
+            padding-top: 50px;
+            width: 85%;
+        }
+    `;
+
+    const Subtitle = Styled.p`
+        color: white;
+        font-size: 1.85rem;
+        text-align: center;
+
+        @media screen and (max-width: 1100px) {
+            font-size: 1.5rem;
+        }
+
+        @media screen and (max-width: 760px) {
+            font-size: 1.25rem;
+        }
+    `;
+
+    return (
+        <>
+            <Header>
+                <HeaderImg src={header} />
+                <Logo>
+                    <img src={logoWhite} />
+                    <Subtitle>Exceptional Home Improvements</Subtitle>
+                </Logo>
+            </Header>
+            <div style={{height: '20px', backgroundColor: COLORS.primary}} />
+            <Intro />
+            <Services />
+            <Contact />
+            <Footer />
+        </>
   );
 }
 

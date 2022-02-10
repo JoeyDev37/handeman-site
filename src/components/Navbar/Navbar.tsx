@@ -19,8 +19,8 @@ const NavMenu = Styled.ul<NavMenuProps>`
         @media screen and (max-width: 760px) {
             position: absolute;
             top: 0;
-            right: 0;
-            transform: ${props => props.open ? 'translateX(0%)' : 'translateX(100%)'};
+            right: ${props => props.open ? 0 : '100%'};
+            //transform: ${props => props.open ? 'translateX(0%)' : 'translateX(100%)'};
             flex-direction: column;
             justify-content: space-around;
             padding-top: 300px;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Intro, Services, Gallery, Contact, Footer } from './components';
-import header from './assets/header.png'
+import header from './assets/header-2.png'
 import logoWhite from './assets/logo-white.png'
 import './App.css';
 import Styled from 'styled-components';

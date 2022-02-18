@@ -10,6 +10,7 @@ function Gallery() {
         height: 300px;
         align-items: center;
         justify-content: center;
+        background-color: ${COLORS.background};
     `;
 
     const Header = Styled.h1`

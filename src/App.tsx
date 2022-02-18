@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Intro, Services, Gallery, Contact, Footer } from './components';
-import header from './assets/header-2.png'
+import header from './assets/header-4.png'
 import logoWhite from './assets/logo-white.png'
 import './App.css';
 import Styled from 'styled-components';
@@ -20,6 +20,7 @@ function App() {
         object-fit: cover;
         width: 100%;
         height: 100%;
+        background-repeat: repeat-y;
     `;
 
     const Logo = Styled.div`
@@ -68,9 +69,10 @@ function App() {
                     <Subtitle>Exceptional Home Improvements</Subtitle>
                 </Logo>
             </Header>
-            <div style={{height: '20px', backgroundColor: COLORS.primary}} />
+            <Navbar />
             <Intro />
             <Services />
+            <Gallery />
             <Contact />
             <Footer />
         </>

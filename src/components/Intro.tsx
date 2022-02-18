@@ -8,6 +8,7 @@ function Intro() {
         align-items: center;
         padding-top: 50px;
         padding-bottom: 50px;
+        background-color: ${COLORS.background}
     `;
 
     const Container = styled.div`
@@ -40,8 +41,8 @@ function Intro() {
         <OuterContainer>
             <Container>
                 <Header style={{color: COLORS.headerText}}>Need A Fix?</Header>
-                <Description>Ethan specializes in home repairs, maintenance and remodels. No matter what room needs work or even a facelift, this Hand"E"man will get the job done. There is no task too small and his attention to detail will leave your next project area clean, like-new or brand new! Call, text or email for information or to schedule a consultation. Licensed and insured.</Description>
-                <p style={{marginTop: '10px', fontWeight: 600, fontSize: '1.2rem', textAlign: 'center'}}>Serving Park City, UT and surrounding areas</p>
+                <Description>Ethan specializes in home repairs, maintenance and remodels. No matter what room needs work or even a facelift, this Hand"E"man will get the job done. There is no task too small and his attention to detail will leave your next project area clean, like-new or brand new! Call, text or email for information.</Description>
+                <p style={{marginTop: '10px', fontWeight: 600, fontSize: '1.2rem', textAlign: 'center'}}>Licensed and insured.</p>
             </Container>
         </OuterContainer>
     )

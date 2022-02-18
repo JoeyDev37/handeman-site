@@ -11,6 +11,7 @@ function Contact() {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        background-color: ${COLORS.background};
 
         @media screen and (max-width: 760px) {
             height: auto;

@@ -40,8 +40,8 @@ function Intro() {
     return (
         <OuterContainer>
             <Container>
-                <Header style={{color: COLORS.headerText}}>Need A Fix?</Header>
-                <Description>Ethan specializes in home repairs, maintenance and remodels. No matter what room needs work or even a facelift, this Hand"E"man will get the job done. There is no task too small and his attention to detail will leave your next project area clean, like-new or brand new! Call, text or email for information.</Description>
+                <Header style={{color: COLORS.headerText}}>Need A Hand?</Header>
+                <Description>Ethan specializes in home repairs, maintenance and remodels. No matter the size of the job, or the type of service you require, Ethan's understanding of quality home improvement will leave your project area in superb condition! <br></br> Call, text or email for information.</Description>
                 <p style={{marginTop: '10px', fontWeight: 600, fontSize: '1.2rem', textAlign: 'center'}}>Licensed and insured.</p>
             </Container>
         </OuterContainer>

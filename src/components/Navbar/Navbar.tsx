@@ -33,7 +33,7 @@ const NavMenu = Styled.ul<NavMenuProps>`
 
 const StyledNavbar = Styled.nav`
     background-color: ${COLORS.primary};
-    height: 50px;
+    height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,7 +88,13 @@ function Navbar() {
 
     return (
         <StyledNavbar>
-            <NavMenu open={open}>
+            
+        </StyledNavbar>
+    )
+}
+
+/*
+<NavMenu open={open}>
             {
                 MenuItems.map((item, i) => (
                     <li key={i}>
@@ -105,8 +111,6 @@ function Navbar() {
                 style={{fontSize: '4rem', color: 'white'}}
                 />
             </MenuIcon>
-        </StyledNavbar>
-    )
-}
+*/
 
 export default Navbar;

@@ -11,7 +11,7 @@ function Contact() {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        background-color: ${COLORS.background};
+        background-color: ${COLORS.primary};
 
         @media screen and (max-width: 760px) {
             height: auto;
@@ -44,21 +44,29 @@ function Contact() {
         <Container>
             <InnerContainer>
                 <ContactContainer>
-                    <h3 style={{marginBottom: '5px'}}>CALL</h3>
-                    <p>435-565-0680</p>
+                    <h3 style={{marginBottom: '5px', color: 'white'}}>CALL</h3>
+                    <p style={{color: 'white'}}>435-565-0680</p>
                 </ContactContainer>
                 <ContactContainer>
-                    <h3 style={{marginBottom: '5px'}}>EMAIL</h3>
-                    <p>handemanpc@gmail.com</p>
+                    <h3 style={{marginBottom: '5px', color: 'white'}}>EMAIL</h3>
+                    <p style={{color: 'white'}}>handemanpc@gmail.com</p>
                 </ContactContainer>
                 <ContactContainer>
-                    <h3 style={{marginBottom: '5px'}}>AREAS COVERED</h3>
-                    <p>Park City | Heber</p>
-                    <p>Midway | Kamas</p>
+                    <h3 style={{marginBottom: '5px', color: 'white'}}>AREA</h3>
+                    <p style={{color: 'white'}}>Park City, UT</p>
                 </ContactContainer>
             </InnerContainer>
         </Container>
     )
 }
+
+/*
+<ContactContainer>
+                    <h3 style={{marginBottom: '5px'}}>AREA</h3>
+                    <p>Park City | Heber</p>
+                    <p>Midway | Kamas</p>
+                </ContactContainer>
+
+*/
 
 export default Contact;

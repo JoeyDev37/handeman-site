@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Intro, Services, Gallery, Contact, Footer } from './components';
 import header from './assets/header-4.png'
-import logoWhite from './assets/logo-white.png'
+import logoWhite from './assets/logo-white-2.png'
 import './App.css';
 import Styled from 'styled-components';
 import { COLORS } from './constants/colors';
@@ -66,7 +66,6 @@ function App() {
                 <HeaderImg src={header} />
                 <Logo>
                     <img src={logoWhite} />
-                    <Subtitle>Exceptional Home Improvements</Subtitle>
                 </Logo>
             </Header>
             <Navbar />

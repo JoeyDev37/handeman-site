@@ -1,17 +1,27 @@
 import React from 'react';
 import { COLORS } from '../constants/colors';
 import Styled from 'styled-components';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import slideOne from '../assets/slide-1.png'
+import slideTwo from '../assets/slide-2.png'
+import slideThree from '../assets/slide-3.png'
 
 function Gallery() {
     const Container = Styled.div`
         display: flex;
-        background-color: white;
-        width: 100%;
-        height: 300px;
+        padding-top: 50px;
+        padding-bottom: 50px;
         align-items: center;
         justify-content: center;
         background-color: ${COLORS.background};
     `;
+    
+    const InnerContainer = Styled.div`
+        display: flex;
+        align-self: center;
+        width: 50%;
+    `
 
     const Header = Styled.h1`
         font-size: 2.5rem;
@@ -23,9 +33,35 @@ function Gallery() {
 
     return (
         <Container>
-            <Header>Gallery</Header>
+            <InnerContainer>
+            <Carousel>
+                    <div>
+                        <img src={slideOne} />
+                    </div>
+                    <div>
+                        <img src={slideTwo} />
+                    </div>
+                    <div>
+                        <img src={slideThree} />
+                    </div>
+                </Carousel> 
+            </InnerContainer>
         </Container>
     )
 }
+
+/*
+<Carousel>
+                    <div>
+                        <img src={slideOne} />
+                    </div>
+                    <div>
+                        <img src={slideTwo} />
+                    </div>
+                    <div>
+                        <img src={slideThree} />
+                    </div>
+                </Carousel>
+*/
 
 export default Gallery;

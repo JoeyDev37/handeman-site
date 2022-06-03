@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../assets/logo.png'
 import Styled from 'styled-components';
 import { COLORS } from '../constants/colors';
+import { Link } from 'react-router-dom';
 
 function QuickContact() {
     const HeaderContainer = Styled.div`
@@ -45,9 +46,10 @@ function QuickContact() {
                 <img src={logo} style={{width: '90%', height: 'auto'}}></img>
             </HeaderContainer>
             <ButtonContainer>
-                <Button href="mailto:handemanpc@gmail.com?Subject=Test Subject&body=Test Message">Email</Button>
+                <Button href="mailto:handemanpc@gmail.com?Subject=Request A Quote">Email</Button>
                 <Button href="tel:4355650680">Call</Button>
                 <Button href="sms:4355650680">Text</Button>
+                <Button><Link to="/">Site</Link></Button>
             </ButtonContainer>
         </>
     );

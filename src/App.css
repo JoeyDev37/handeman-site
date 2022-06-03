@@ -9,12 +9,18 @@ html {
     /* this makes sure the padding and the border is included in the box sizing */
     box-sizing: border-box;
     overflow-x: hidden;
+    background-color: #ededed;
   }
   
 html body {
     padding: 0;
     margin: 0;
     overflow-y: inherit;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
 }
 
 .header {
